@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+alert("Instrucciones: Llenar los blancos con la contestacion que pienses que esta correcta, luego presionar ENVIAR. Al terminar con los 10 problemas presionar VER RESULTADO FINAL, suerte!");
+</script>
+<center>
+<h2>Juego de matematicas nivel elemental</h2>
+<style type="text/css">
+.bgimg {
+    background-image: url("blackboard-2712823_960_720.jpg");
+    	height:700px;
+	width:950px ;
+}
+#demo {
+       color: white;
+       //border: 1px solid powderblue;
+       padding: 30px;
+       font-size: 50px;
+}
+#leo{
+}
+</style>
+
+<body>
+<div class="bgimg"><center>
+
+<p id="demo"></cente></p>
+</style>
+
+<p id="demo"></p>
+
+<script>
+var result;
+var result2;
+var result3;
+var result4;
+var result5;
+var result6;
+var signoa1;
+var signoa2;
+var signoa3;
+var signoa4;
+var signoa5;
+var signoa6;
+var signoa7;
+var signoa8;
+var signoa9;
+var signoa10;
+var num1a1= Math.floor(Math.random() * 10);
+var num1a2 = Math.floor(Math.random() * 10);
+var num1a3 = Math.floor(Math.random() * 10);
+var num1a4 = Math.floor(Math.random() * 10);
+var num1a5= Math.floor(Math.random() * 10);
+var num1a6= Math.floor(Math.random() * 10);
+var num1a7 = Math.floor(Math.random() * 10);
+var num1a8 = Math.floor(Math.random() * 10);
+var num1a9= Math.floor(Math.random() * 10);
+var num1a10= Math.floor(Math.random() * 10);
+var num2a1 = Math.floor(Math.random() * 10);
+var num2a2 = Math.floor(Math.random() * 10);
+var num2a3 = Math.floor(Math.random() * 10);
+var num2a4 = Math.floor(Math.random() * 10);
+var num2a5 = Math.floor(Math.random() * 10);
+var num2a6 = Math.floor(Math.random() * 10);
+var num2a7 = Math.floor(Math.random() * 10);
+var num2a8 = Math.floor(Math.random() * 10);
+var num2a9 = Math.floor(Math.random() * 10);
+var num2a10 = Math.floor(Math.random() * 10);
+var operador = Math.floor(Math.random() * 2);
+var operadora2 = Math.floor(Math.random() * 2);
+var operadora3 = Math.floor(Math.random() * 2);
+var operadora4 = Math.floor(Math.random() * 2);
+var operadora5 = Math.floor(Math.random() * 2);
+var operadora6 = Math.floor(Math.random() * 2);
+var operadora7 = Math.floor(Math.random() * 2);
+var operadora8 = Math.floor(Math.random() * 2);
+var operadora9 = Math.floor(Math.random() * 2);
+var operadora10 = Math.floor(Math.random() * 2);
+var contador = 0;
+var contadormalas = 0;
+var i = 0;
+switch(operador) {
+    case 0:
+        result= num1a1 + num2a1;
+	signoa1= "+"
+        break;
+    case 1:
+        result= num1a1 - num2a1;
+	signoa1= "-"
+        break;
+    case 2:
+        result= num1a1 * num2a1;
+	signoa1= "x"
+	break;
+}
+switch(operador) {
+    case 0:
+        result2= num1a2 - num2a2;
+	signoa2= "-"
+        break;
+    case 1:
+        result2= num1a2 + num2a2;
+	signoa2= "+"
+        break;
+    case 2:
+        result2= num1a2 * num2a2;
+	signoa2= "x"
+	break;
+}
+switch(operador) {
+    case 0:
+        result3= num1a3 * num2a3;
+	signoa3= "x"
+        break;
+    case 1:
+        result3= num1a3 - num2a3;
+	signoa3= "-"
+        break;
+    case 2:
+        result3= num1a3 + num2a3;
+	signoa3= "+"
+	break;
+}
+switch(operador) {
+    case 0:
+        result4= num1a4 - num2a4;
+	signoa4= "-"
+        break;
+    case 1:
+        result4= num1a4 + num2a4;
+	signoa4= "+"
+        break;
+    case 2:
+        result4= num1a4 * num2a4;
+	signoa4= "x"
+	break;
+}
+switch(operador) {
+    case 0:
+        result5= num1a5 * num2a5;
+	signoa5= "x"
+        break;
+    case 1:
+        result5= num1a5 - num2a5;
+	signoa5= "-"
+        break;
+    case 2:
+        result5= num1a5 + num2a5;
+	signoa5= "+"
+	break;
+}
+switch(operador) {
+    case 0:
+        result6= num1a6 + num2a6;
+	signoa6= "+"
+        break;
+    case 1:
+        result6= num1a6 - num2a6;
+	signoa6= "-"
+        break;
+    case 2:
+        result6= num1a6 * num2a6;
+	signoa6= "x"
+	break;
+}
+switch(operador) {
+    case 0:
+        result7= num1a7 * num2a7;
+	signoa7= "x"
+        break;
+    case 1:
+        result7= num1a7 - num2a7;
+	signoa7= "-"
+        break;
+    case 2:
+        result7= num1a7 + num2a7;
+	signoa7= "+"
+	break;
+}
+switch(operador) {
+    case 0:
+        result8= num1a8 + num2a8;
+	signoa8= "+"
+        break;
+    case 1:
+        result8= num1a8 - num2a8;
+	signoa8= "-"
+        break;
+    case 2:
+        result8= num1a8 * num2a8;
+	signoa8= "x"
+	break;
+}
+switch(operador) {
+    case 0:
+        result9= num1a9 + num2a9;
+	signoa9= "+"
+        break;
+    case 1:
+        result9= num1a9 - num2a9;
+	signoa9= "-"
+        break;
+    case 2:
+        result9= num1a9 * num2a9;
+	signoa9= "x"
+	break;
+}
+switch(operador) {
+    case 0:
+        result10= num1a10 + num2a10;
+	signoa10= "+"
+        break;
+    case 1:
+        result10= num1a10 - num2a10;
+	signoa10= "-"
+        break;
+    case 2:
+        result10= num1a10 * num2a10;
+	signoa10= "x"
+	break;
+}
+function verification() {
+    var entrada = document.getElementById("numb").value;
+	if(entrada == result) {
+	 alert("Correcto!");
+	contador = contador + 1;
+}
+	else {
+	 alert("Incorrecto!, +1 intento fallido");
+	contadormalas = contadormalas + 1;
+	}
+if(contador>10)
+	{
+		contador = 10
+	}
+	else
+{
+	contador = contador
+}
+}
+function verification2() {
+    var entrada2 = document.getElementById("numb2").value;
+	if(entrada2 == result2) {
+	 alert("Correcto!");
+	contador = contador + 1;
+}
+	else {
+	 alert("Incorrecto!, +1 intento fallido");
+	contadormalas = contadormalas + 1;
+	}
+if(contador>10)
+	{
+		contador = 10
+	}
+	else
+{
+	contador = contador
+}
+}
+function verification3() {
+    var entrada3 = document.getElementById("numb3").value;
+	if(entrada3 == result3) {
+	 alert("Correcto!");
+	contador = contador + 1;
+}
+	else {
+	 alert("Incorrecto!, +1 intento fallido");
+	contadormalas = contadormalas + 1;
+	}
+if(contador>10)
+	{
+		contador = 10
+	}
+	else
+{
+	contador = contador
+}
+}
+function verification4() {
+    var entrada4 = document.getElementById("numb4").value;
+	if(entrada4 == result4) {
+	 alert("Correcto!");
+	contador = contador + 1;
+}
+	else {
+	 alert("Incorrecto!, +1 intento fallido");
+	contadormalas = contadormalas + 1;
+	}
+	if(contador>10)
+	{
+		contador = 10
+	}
+	else
+{
+	contador = contador
+}
+}
+function verification5() {
+    var entrada5 = document.getElementById("numb5").value;
+	if(entrada5 == result5) {
+	 alert("Correcto!");
+	contador = contador + 1;
+}
+	else {
+	 alert("Incorrecto!, +1 intento fallido");
+	contadormalas = contadormalas + 1;
+	}
+if(contador>10)
+	{
+		contador = 10
+	}
+	else
+{
+	contador = contador
+}
+}
+function verification6() {
+    var entrada6 = document.getElementById("numb6").value;
+	if(entrada6 == result6) {
+	 alert("Correcto!");
+	contador = contador + 1;
+}
+	else {
+	
+	 alert("Incorrecto!, +1 intento fallido");
+	contadormalas = contadormalas + 1;
+	}
+	if(contador>10)
+	{
+		contador = 10
+	}
+	else
+{
+	contador = contador
+}
+}
+function verification7() {
+    var entrada7 = document.getElementById("numb7").value;
+	if(entrada7 == result7) {
+	 alert("Correcto!");
+	contador = contador + 1;
+}
+	else {
+	 alert("Incorrecto!, +1 intento fallido");
+	contadormalas = contadormalas + 1;
+	}
+if(contador>10)
+	{
+		contador = 10
+	}
+	else
+{
+	contador = contador
+}
+}
+function verification8() {
+    var entrada8 = document.getElementById("numb8").value;
+	if(entrada8 == result8) {
+	 alert("Correcto!");
+	contador = contador + 1;
+}
+	else {
+	 alert("Incorrecto!, +1 intento fallido");
+	contadormalas = contadormalas + 1;
+	}
+	if(contador>10)
+	{
+		contador = 10
+	}
+	else
+{
+	contador = contador
+}
+}
+function verification9() {
+    var entrada9 = document.getElementById("numb9").value;
+	if(entrada9 == result9) {
+	 alert("Correcto!");
+	contador = contador + 1;
+}
+	else {
+	 alert("Incorrecto!, +1 intento fallido");
+	contadormalas = contadormalas + 1;
+	}
+if(contador>10)
+	{
+		contador = 10
+	}
+	else
+{
+	contador = contador
+}
+}
+function verification10() {
+    var entrada10 = document.getElementById("numb10").value;
+	if(entrada10 == result10) {
+	 alert("Correcto!");
+	contador = contador + 1;
+}
+	else {
+	 alert("Incorrecto!, +1 intento fallido");
+	contadormalas = contadormalas + 1;
+	}
+	if(contador>10)
+	{
+		contador = 10
+	}
+	else
+{
+	contador = contador
+}
+}
+document.getElementById("demo").innerHTML = num1a1 + signoa1 + num2a1 + "<input id=numb> <button type=button onclick=verification()>Enviar</button>&nbsp;&nbsp;&nbsp;" + num1a2 + signoa2 + num2a2 + "<input id=numb2> <button type=button onclick=verification2()>Enviar</button> <br><br>" + num1a3 + signoa3 + num2a3 + "<input id=numb3> <button type=button onclick=verification3()>Enviar</button>&nbsp;&nbsp;&nbsp;" + num1a4 + signoa4 + num2a4 + "<input id=numb4> <button type=button onclick=verification4()>Enviar</button> <br><br>" + + num1a5 + signoa5 + num2a5 + "<input id=numb5> <button type=button onclick=verification5()>Enviar</button>&nbsp;&nbsp;&nbsp;" + num1a6 + signoa6 + num2a6 + "<input id=numb6> <button type=button onclick=verification6()>Enviar</button> <br><br>" + num1a7 + signoa3 + num2a7 + "<input id=numb7> <button type=button onclick=verification7()>Enviar</button>&nbsp;&nbsp;&nbsp;" + num1a8 + signoa8 + num2a8 + "<input id=numb8> <button type=button onclick=verification8()>Enviar</button> <br><br>" + + num1a9 + signoa9 + num2a9 + "<input id=numb9> <button type=button onclick=verification9()>Enviar</button>&nbsp;&nbsp;&nbsp;" + num1a10 + signoa10 + num2a10 + "<input id=numb10> <button type=button onclick=verification10()>Enviar</button>";
+</script>
+<button onclick="myFunction()">Ver resultado final</button> <input type="button" value="Empezar desde 0" onClick="window.location.href=window.location.href">
+
+<p id="puta"></p>
+
+
+<script>
+function myFunction() {
+  alert("TU RESULTADO FINAL, EL SIGUIENTE NUMERO SON LAS CONTESTACIONES CORRECTAS: ...");
+  alert(contador); 
+  alert("EL SIGUIENTE NUMERO SON LOS INTENTOS FALLIDOS: ...")
+  alert(contadormalas)
+  
+
+}
+</script>
+</body>
+<p>hecho por: Jose Juan Cortes Hernandez #: Y00567951</p>
+</html>
